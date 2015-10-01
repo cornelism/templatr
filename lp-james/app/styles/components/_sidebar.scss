@@ -1,0 +1,14 @@
+.sidebar {
+	padding: 10px!important;
+    background-color: #ddd;
+    margin-bottom: 15px;
+	h2 {
+		margin-top: 0;
+	}
+	img {
+		width: 100%;
+	}
+	> *:last-child {
+		margin-bottom:0;
+	}
+}

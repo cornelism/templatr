@@ -1,0 +1,22 @@
+.cta-lower{
+	margin: 20px 0 0 0;
+	.btn {
+		margin-bottom: 0px;
+		margin-right: 15px;
+		@include max-bp(390px){
+			margin-right: 0;
+		}
+		
+		@include max-bp(767px){
+			margin-bottom: 20px;
+		}
+		
+		&:last-child {
+			margin-right: 0px;
+			@include max-bp(390px){
+				margin-left: 0;
+				margin-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,129 @@
+.topics {
+	margin-bottom: 20px;
+	
+	@include small {
+		margin-bottom:0	;
+	}
+}
+
+.topic {
+	box-sizing: border-box;
+	border: 1px solid #e5e9ef;
+	box-sizing: border-box;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-bottom: 1px solid transparent;
+	
+	&:first-child,
+	&:last-child {
+		border-left: 1px solid #e5e9ef;
+		border-right: 1px solid #e5e9ef;
+	}
+	
+	&:last-child {
+		border-bottom: 1px solid #e5e9ef;
+	}
+	
+	&.active {
+		border-bottom: 1px solid transparent;
+		a {
+			color: $green;
+		}
+		
+		&:after {
+			background-color: #fafafa;
+		}
+		
+		&:last-child {
+			border-bottom: 1px solid #e5e9ef;
+		}
+	}
+	
+	a {
+	    display: inline-block;
+	    text-decoration: none;
+	    width: 100%;
+	    box-sizing: border-box;
+	    text-align: center;
+	    font-family: "BNPSansCondensed";
+		font-size: 20px;
+		line-height: 20px;
+		padding: 10px 0;
+		color: $grey-title-topic;
+		z-index: 5;
+		position: relative;
+		
+	    @include small {
+	    	height: 100%;
+			padding: 111px 0 0 0;
+			font-size: 20px;
+			line-height: 20px;
+		}
+		
+		@include medium {
+			padding: 139px 0 0 0;
+			font-size: 27px;
+			line-height: 35px;
+		}
+	}
+	
+	@include small {
+		height: 160px;
+		border-top: 1px solid #e5e9ef;
+		border-bottom: 1px solid #e5e9ef;
+		
+		&:after {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			background-size: 228px 106px;
+			background-position: top center;
+			background-repeat: no-repeat;
+			content: "";
+			z-index: 0;
+			opacity:0.5;
+		}
+		
+		&.active{
+			border-bottom: 1px solid #fafafa;
+			&:after {
+				opacity:1;
+			}
+			
+			&:last-child {
+				border-bottom: 1px solid #fafafa;
+			}
+		}
+		
+		&.topic-1 {
+			&:after {
+				background-image: url($img-topic-1);
+			}
+		}
+		
+		&.topic-2 {
+			&:after {
+				background-image: url($img-topic-2);	
+			}
+		}
+		
+		&.topic-3 {
+			&:after {
+				background-image: url($img-topic-3);
+			}
+		}
+	}
+	
+	@include medium {
+		height: 218px;
+		
+		&:after {
+		    background-size: 293px 136px;
+		    
+		}
+	}
+}

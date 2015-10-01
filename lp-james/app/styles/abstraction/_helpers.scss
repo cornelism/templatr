@@ -1,0 +1,26 @@
+.nopadding {
+   padding: 0;
+   margin: 0;
+}
+
+.align-right {
+	width: 100%;
+    display: block;
+	text-align: right;
+}
+
+.sm-align-right {
+	@include small {
+		width: 100%;
+	    display: block;
+		text-align: right;
+	}
+}
+
+.md-align-right {
+	@include medium {
+		width: 100%;
+	    display: block;
+		text-align: right;
+	}
+}

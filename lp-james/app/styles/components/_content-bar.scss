@@ -1,0 +1,9 @@
+.content-bar {
+	@include small {
+		padding: 0 15px 0 0;
+	}
+	
+	@include medium {
+		padding: 0 30px 0 0;
+	}
+}

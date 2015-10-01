@@ -1,0 +1,73 @@
+.btn-default {
+	color:white;
+	border:0;
+	padding: 12px 12px 10px 12px;
+	margin-bottom:10px;
+	text-decoration: none;
+	
+	&:hover,
+	&:focus,
+	&:active,
+	&.active,
+	.open &.dropdown-toggle {
+		background-color:#008578;
+		border-color:#008578;
+		color:white;
+		font-family: "BNPSansCondensed";
+		font-size: 16px;
+	}
+	.visual-header & {
+		margin: 0;
+		float: left;
+		@include max-bp(380px){
+			float:none;
+		}
+	}
+	
+	&.disabled-on-desktop {
+		opacity: 1;
+		@include medium {
+			
+			pointer-events:none;
+		}
+	}
+}
+
+
+.btn{
+	font-family: "BNPSansCondensed";
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	border: 0;
+	
+	@include max-bp(380px) {
+		float: none;
+  		display: block;
+  		
+	}
+	
+	&.green {
+		background-color: $green-button;
+		color: white;
+		&:hover {
+			background-color: $green-button-hover;
+		}
+	}
+	
+	&.white {
+		background-color: white;
+		color: black;
+		&:hover {
+			background-color: #d3d3d3;
+		}
+	}
+	
+	&.grey {
+		background-color: $grey-button;
+		color: black;
+		&:hover {
+			background-color: #d3d3d3;
+		}
+	}
+}

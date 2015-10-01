@@ -20,8 +20,8 @@ module.exports = function (grunt) {
 
   // Configurable paths
   var config = {
-    app: 'app',
-    dist: 'dist'
+    app: 'lp-james/app',
+    dist: 'lp-james/dist'
   };
 
   // Define the configuration for all the tasks
@@ -385,7 +385,7 @@ module.exports = function (grunt) {
 
 
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
-
+    
     if (target === 'dist') {
       return grunt.task.run(['build', 'browserSync:dist']);
     }

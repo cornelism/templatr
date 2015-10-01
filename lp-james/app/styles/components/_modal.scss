@@ -1,0 +1,66 @@
+.modal {
+	.close {
+		
+	}
+	
+	.modal-dialog {
+		margin: 25px auto 0 auto;
+		
+		@include small {
+			margin-top: 50px;
+		    width: 600px;
+		    height: 390px;
+		    margin: 50px auto 0 auto
+		}
+		
+		@include medium {
+			margin-top: 100px;
+			width: 780px;
+    		height: 485px;
+    		margin: 100px auto 0 auto;
+		}
+		
+	}
+	
+	.modal-header {
+		height: 35px;
+		padding: 10px;
+	}
+	
+	.modal-content {
+		border-radius: 0;
+		width: 320px;
+		height: 240px;
+		margin: 0 auto;
+		@include small {
+		    width: 600px;
+		    height: 390px;
+		}
+		@include medium {
+			width: 780px;
+    		height: 485px;
+		}
+	}
+	
+	.modal-footer {
+		button {
+			margin: 0;
+		}
+	}
+	
+	iframe {
+		width: 100%;
+		height: 156px;
+		border:0;
+		margin-top: 10px;
+		
+		@include small {
+			height: 314px;
+		}
+		
+		@include medium {
+			height: 415px;
+		}
+	}
+	
+}

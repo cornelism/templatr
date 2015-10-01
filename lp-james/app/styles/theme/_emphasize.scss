@@ -1,0 +1,16 @@
+em {
+	font-family: "BNPSansCondensed";
+	font-size: 28px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 28px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    @include mobile {
+    	text-align: center;
+    }
+}
